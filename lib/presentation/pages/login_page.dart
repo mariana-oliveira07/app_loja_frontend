@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_flutter/presentation/viewmodel/user_viewmodel.dart';
+import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -57,6 +58,9 @@ class _LoginPageState extends State<LoginPage> {
   }
   void cancelar() {
     Navigator.popAndPushNamed(context, "/");
+  }
+  void irParaRegistro() {
+    Navigator.pushNamed(context, "/register");
   }
 }
 
