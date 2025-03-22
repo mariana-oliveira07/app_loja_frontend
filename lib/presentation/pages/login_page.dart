@@ -55,6 +55,9 @@ class _LoginPageState extends State<LoginPage> {
       }
      }
   }
+  void cancelar() {
+    Navigator.popAndPushNamed(context, "/");
+  }
 }
 
 @override
